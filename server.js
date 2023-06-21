@@ -32,7 +32,7 @@ const server=app.listen(process.env.PORT, ()=>{
 
 const io=socket(server,{
    cors:{
-      origin:{"http://localhost:3000","https://my-mern-chat.netlify.app/"},
+      origin:"https://my-mern-chat.netlify.app",
       credentials:true,
    }
 })
